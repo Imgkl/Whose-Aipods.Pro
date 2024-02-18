@@ -37,6 +37,7 @@
 
 .email {
     font-size: 20px;
+    text-decoration: underline;
     font-family: 'Trapp', sans-serif;
     text-align: center;
 }
