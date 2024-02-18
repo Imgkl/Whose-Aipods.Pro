@@ -25,10 +25,18 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+
 }
 
 .title {
     font-size: 60px;
+    font-family: 'Trapp', sans-serif;
+    text-align: center;
+}
+
+.email {
+    font-size: 20px;
     font-family: 'Trapp', sans-serif;
     text-align: center;
 }

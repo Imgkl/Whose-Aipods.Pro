@@ -37,6 +37,11 @@ export default function Home() {
             <br />
             Airpods Pro
           </h1>
+          <h5 className={styles.email}>
+            <a href="mailto:saigklkrishnan@gmail.com?subject=Found%20Your%20Airpods">
+              saigklkrishnan@gmail.com
+            </a>
+          </h5>
         </div>
       </main>
     </div>
