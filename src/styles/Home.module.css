@@ -1,3 +1,10 @@
+/* Assuming you have a font file at public/fonts/Roboto-Regular.ttf */
+@font-face {
+    font-family: 'Trapp';
+    src: url('/font/Trap.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
 
 .backgroundImage {
     position: fixed;
@@ -22,6 +29,6 @@
 
 .title {
     font-size: 70px;
-    font-family: 'Trap';
+    font-family: 'Trapp', sans-serif;
     text-align: center;
 }
