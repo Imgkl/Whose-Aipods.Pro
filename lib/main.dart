@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           body: Stack(
             children: [
               Opacity(
-                opacity: 0.3,
+                opacity: 0.25,
                 child: SizedBox(
                   width: double.infinity,
                   height: double.infinity,
