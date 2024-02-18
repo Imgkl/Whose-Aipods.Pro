@@ -14,28 +14,35 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: "Trap",
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
       home: Scaffold(
-        body: Container(
-          padding: const EdgeInsets.all(20),
-          width: double.infinity,
-          height: double.infinity,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-                scale: 20,
-                image: AssetImage('assets/images/airpods.png'),
-                opacity: 0.3,
-                repeat: ImageRepeat.repeat),
-          ),
-          child: const Center(
-            child: Text(
-              'Gokul\'s\nAirpods Pro',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 70),
+        body: Stack(
+          children: [
+            Opacity(
+              opacity: 0.3,
+              child: SizedBox(
+                width: double.infinity,
+                height: double.infinity,
+                child: Image.asset(
+                  "assets/images/airpods.png",
+                  scale: 20,
+                  repeat: ImageRepeat.repeat,
+                ),
+              ),
             ),
-          ),
+            const Padding(
+              padding: EdgeInsets.all(20),
+              child: Center(
+                child: Text(
+                  'Gokul\'s\nAirpods Pro',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 70),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
